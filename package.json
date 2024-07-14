@@ -1,0 +1,29 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "cdk deploy",
+    "build": "NODE_ENV=production webpack --config webpack.config.ts",
+    "initDB": "npx ts-node src/vectorDB/initDB.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.141",
+    "@types/node": "^20.14.10",
+    "@types/uuid": "^10.0.0",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "ts-loader": "^9.5.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^2.2.2",
+    "aws-lambda": "^1.0.7",
+    "dotenv": "^16.4.5",
+    "openai": "^4.52.7",
+    "uuid": "^10.0.0"
+  }
+}
