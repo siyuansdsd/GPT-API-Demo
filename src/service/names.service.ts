@@ -10,12 +10,7 @@ export default class NamesService {
     const inputChars = input.trim().replace(/\s+/g, "").split(""); // remove all spaces, and separate to array
     const nameChars = name.trim().replace(/\s+/g, "").split("");
 
-    let tolerance = 0; // How many characters can be different
-    if (inputChars.length > nameChars.length) {
-      tolerance = Math.floor(inputChars.length / 2);
-    } else {
-      tolerance = Math.floor(inputChars.length / 2);
-    }
+    const tolerance = Math.floor(inputChars.length / 2); // How many characters can be different
 
     let diffCount = 0;
     const result = inputChars.every((char) => {

@@ -1,6 +1,5 @@
 import { Pinecone } from "@pinecone-database/pinecone";
 import { OpenAI, ClientOptions } from "openai";
-import { join } from "path";
 
 export default class VectorHintService {
   private pinecone: Pinecone;
