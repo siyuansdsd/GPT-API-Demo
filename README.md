@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Technologies](#technologies-used)
 - [Getting_Started](#getting-started)
+- [Unit_Test](#unit-test)
 
 ## Introduction
 
@@ -68,3 +69,41 @@ $ npm run deploy
 you can using 2 ways(using PUT METHOD with body { "input": "input_name" }) by:
 1./api/v1
 2./api/v2
+
+## Unit Test
+
+You can run
+
+```bash
+$ npm run test:cov
+```
+
+And compare with this result(100% coverage), if there is any different please contact me
+
+```txt
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 103/103 )
+Branches     : 100% ( 37/37 )
+Functions    : 100% ( 24/24 )
+Lines        : 100% ( 95/95 )
+================================================================================
+------------------------|---------|----------|---------|---------|-------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+------------------------|---------|----------|---------|---------|-------------------
+All files               |     100 |      100 |     100 |     100 |
+ controller/v1          |     100 |      100 |     100 |     100 |
+  v1.controller.ts      |     100 |      100 |     100 |     100 |
+ controller/v2          |     100 |      100 |     100 |     100 |
+  v2.controller.ts      |     100 |      100 |     100 |     100 |
+ service                |     100 |      100 |     100 |     100 |
+  names.service.ts      |     100 |      100 |     100 |     100 |
+  openAI.service.ts     |     100 |      100 |     100 |     100 |
+  vectorhint.service.ts |     100 |      100 |     100 |     100 |
+------------------------|---------|----------|---------|---------|-------------------
+Test Suites: 5 passed, 5 total
+Tests:       22 passed, 22 total
+Snapshots:   0 total
+Time:        2.674 s, estimated 3 s
+Ran all test suites.
+```
