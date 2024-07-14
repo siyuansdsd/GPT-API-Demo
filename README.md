@@ -20,8 +20,9 @@ you should add JSON body { "input": "inputName" }, use PUT HTTP METHOD to check 
 ## Technologies Used
 
 - [TypeScript](https://github.com/microsoft/TypeScript)
-- Openai_api
-- Pinecone_vector_DB
+- [Openai_api](https://github.com/openai/)
+- [Pinecone_vector_DB](https://github.com/pinecone-io)
+- [AWS_CDK](https://github.com/aws/aws-cdk)
 
 ## Getting Started
 
